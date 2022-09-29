@@ -1,0 +1,843 @@
+@import "reset.css";
+@font-face {
+    font-family: 'Champagne & Limousines';
+    src: url('font/Champagne\ &\ Limousines.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* font-family: 'Abril Fatface', cursive;
+font-family: 'Josefin Slab', serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+.none {
+    display: none !important;
+}
+
+body {
+    max-width: 926px;
+    margin: 0 auto;
+    padding-right: 13px;
+    padding-left: 13px;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+
+    color: #520100;
+    background-color: #efdfbb;
+}
+
+
+/* === HEADER === */
+
+.header {
+    padding: 64px 0;
+    position: relative;
+    text-align: center;
+}
+
+.header img {
+    position: absolute;
+    top: 64px;
+    left: 50%;
+    z-index: -1;
+    transform: translateX(-50%);
+}
+
+.first {
+    color: #85be9d;
+}
+
+.second {
+    color: #d82634;
+}
+
+.header__title {
+    padding: 22px 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 80px;
+    line-height: 82.59px;
+    text-transform: uppercase;
+}
+
+.header__subtitle {
+    font-family: 'Edwardian Script ITC', sans-serif;
+    font-size: 40px;
+    line-height: 18px;    
+}
+
+.header__text {
+    padding-top: 50px;
+    font-family: 'Champagne & Limousines';
+    font-size: 48px;
+    text-transform: uppercase;
+}
+
+
+/* === MAIN === */
+
+.main {
+    padding: 35px 34px 19px 20px;
+    margin-bottom: 30px;
+    position: relative;
+    background-color: #ead39e;
+    border-radius: 10px;
+}
+
+.border-topLeft {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transform: rotate(-90deg);
+}
+
+.border-topRight {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.border-botLeft {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    transform: rotate(180deg);
+}
+
+.border-botRight {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    transform: rotate(90deg);
+}
+
+/* === SECTION - INTRO === */
+
+.intro {
+    display: flex;
+}
+
+.intro__img {
+    margin-right: 20px;
+    position: relative;
+    width: 100%;
+    max-width: 238px;
+    height: auto;
+}
+
+.intro__img::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-52%, -50%);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #520100;
+}
+
+.intro__title {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 48px;
+    text-transform: uppercase;
+}
+
+.intro__subtitle {
+    font-family: 'Josefin Slab', serif;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.intro__subtitle::after {
+    content: "";
+    display: block;
+    width: 564px;
+    height: 1px;
+    background-color: #520100;
+}
+
+.intro__text {
+    padding-top: 35px;
+    max-width: 520px;
+}
+
+
+/* === SECTION - SKILLS === */
+
+.skills {
+    padding-top: 28px;
+    position: relative;
+}
+
+.tech-skills {
+    position: relative;
+}
+
+.tech-skills img:first-child {
+    position: absolute;
+    top: 31px;
+    left: 0;
+    z-index: 0;
+    opacity: .8;
+}
+
+.tech-skills img:last-child {
+    position: absolute;
+    top: 0;
+    right: 12px;
+}
+
+.title--tech-skills {
+    padding-top: 68px;
+    position: relative;
+    padding-left: 15px;
+    color: #e9cb99;  
+}
+
+.subtitle--tech-skills{
+    padding-left: 15px;
+    position: relative;
+    color: #e9cb99;  
+}
+
+.list {
+    line-height: 36px;
+}
+
+.list--tech {
+    padding-left: 15px;
+    padding-top: 70px;
+}
+
+.list--tech li::before {
+    padding-right: 30px;
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url('img/icons/points.png') 0 3px no-repeat;
+    vertical-align: middle;
+}
+
+.personal-skills {
+    position: absolute;
+    padding: 20px;
+    bottom: 0;
+    right: 0;
+    width: 494px;
+    height: 235px;
+    border-radius: 15px;
+    background-color: #84c09e;
+}
+
+.title {
+    font-family: 'Josefin Slab', serif;
+    font-size: 48px;
+    text-transform: uppercase;
+}
+
+.title--personal-skills {
+    padding-left: 10px;
+    color: #f83f40;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, .5);
+}
+
+.subtitle {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 30px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.subtitle--personal-skills {
+    padding-left: 10px;
+    color: #f83f40;   
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, .5); 
+}
+
+.list--skills {
+    padding-top: 20px;
+    max-height: 150px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.list--skills li::before {
+    padding-right: 35px;
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url('img/icons/photo.png') 0 1px no-repeat;
+    vertical-align: middle;
+}
+
+
+/* === SECTION - EDUCATION & HOBBIES === */
+
+.educat-and-hobby {
+    padding-top: 68px;
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section__wrapper {
+    display: flex;
+}
+
+.section__wrapper img {
+    padding-right: 15px;
+}
+
+/* === EDUCATION === */
+
+.title__wrapper {
+    position: relative;
+    z-index: 10;
+    line-height: 1.08;
+}
+
+.educat .title__wrapper::after {
+    content: "";
+    display: block;
+    width: 256px;
+    height: 58px;
+    border-radius: 10px;
+    background-color: #84c09e;
+    position: absolute;
+    top: 8px;
+    left: 34px;
+    z-index: -1;
+}
+
+.list--educat {
+    padding-top: 34px;
+    padding-left: 58px;
+}
+
+.list--educat li::before {
+    padding-right: 35px;
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url('img/icons/book.png') 0 1px no-repeat;
+    vertical-align: middle;
+}
+
+/* === HOBBY === */
+
+.hobby .title__wrapper::after {
+    content: "";
+    display: block;
+    width: 165px;
+    height: 58px;
+    border-radius: 10px;
+    background-color: #84c09e;
+    position: absolute;
+    top: 9px;
+    left: -2px;
+    z-index: -1;
+}
+
+.list--hobby {
+    padding-top: 45px;
+    padding-left: 58px;
+}
+
+.list--hobby li::before {
+    padding-right: 35px;
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url('img/icons/hobby.png') 0 1px no-repeat;
+    vertical-align: middle;
+}
+
+
+/* === SECTION - EXPIRIENCE & CONTACT === */
+
+.expirience-and-contact {
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* === EXPIRIENCE === */
+
+.expirience {
+    position: relative;
+    left: 45px;
+    width: 384px;
+    height: 347px;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #f83f40, #f56256);
+}
+
+.expirience img {
+    position: absolute;
+    top: -10px;
+    left: -43px;
+}
+
+.title--expirience {
+    padding: 38px 0 25px;
+    text-align: center;
+     color: #e9cb99;
+}
+
+.list--expirience {
+    padding-left: 50px;
+    color: #e9cb99;
+}
+
+.list--expirience li::before {
+    padding-right: 35px;
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url('img/icons/expirience.png') 0 1px no-repeat;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+
+/* === CONTACT === */
+
+.contact .section__wrapper {
+    padding-top: 26px;
+    align-items: center;
+}
+
+.list--contact {
+    padding-top: 14px;
+    padding-left: 110px;
+}
+
+.list--contact a {
+    padding-left: 8px;
+}
+
+.list--contact li::before {
+    padding-right: 20px;
+    vertical-align: middle;
+    content: "";
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: #84c09e;
+    cursor: pointer;
+}
+
+.contact__phone::before {
+    background: url('img/icons/contact-call-answer.png') center no-repeat;
+}
+
+.contact__mail::before {
+    background: url('img/icons/contact-new-email-envelope.png') center no-repeat;
+}
+
+.contact__facebook::before {
+    background: url('img/icons/contact-facebook.png') center no-repeat;
+}
+
+.contact__twitter::before {
+    background: url('img/icons/contact-twitter.png') center no-repeat;
+}
+
+
+
+/* === MEDIA === */
+
+@media (max-width: 925px) {
+
+    .header__title {
+        font-size: 60px;
+    }
+
+    .header__subtitle {
+        font-size: 30px;
+    }
+
+    .header__text {
+        font-size: 30px;
+    }
+
+    .intro__title {
+        font-size: 35px;
+    }
+
+    .intro__subtitle {
+        font-size: 25px;
+    }
+
+    .intro__text {
+        padding-top: 15px;
+        max-width: 400px;
+    }
+
+    .intro__subtitle::after {
+        width: 450px;
+    }
+
+    .title {
+        font-size: 35px;
+    }
+
+    .subtitle {
+        font-size: 25px;
+    }
+
+    .tech-skills img:first-child {
+        width: 76%;
+        top: 33px;
+    }
+
+    .tech-skills img:last-child {
+        width: 22%;
+        top: -4px;
+    }
+
+    .personal-skills {
+        width: 460px;
+    }
+
+    .expirience {
+        width: 290px;
+        height: 300px;
+    }
+
+}
+
+
+@media (max-width: 800px) {
+
+    .header {
+        padding: 36px 0 20px;
+    }
+
+    .header img {
+        width: 100%;
+        max-width: 500px;
+        top: 30px;
+    }
+
+
+    .header__title {
+        font-size: 35px;
+        padding: 15px 0;
+        line-height: 1;
+    }
+    
+    .header__subtitle {
+        font-size: 30px;
+        line-height: 1;    
+    }
+    
+    .header__text {
+        padding-top: 40px;
+        font-size: 30px;
+    }
+
+
+    .intro__title {
+        font-size: 25px;
+    }
+
+    .intro__subtitle {
+        font-size: 20px;
+    }
+
+    .intro__subtitle::after {
+        width: 320px;
+    }
+
+    .intro__img {
+        max-width: 150px;
+    }
+
+    .intro__img::after {
+        top: 40%;
+        left: 50%;
+        width: 85px;
+        height: 85px;
+    }
+
+    .intro__text {
+        max-width: 280px;
+    }
+
+    .title {
+        font-size: 25px;
+        color: inherit;
+    }
+
+    .subtitle {
+        font-size: 22px;
+        color: inherit;
+    }
+
+    .title--tech-skills {
+        padding: 5px 0 5px 15px;
+    }
+
+    .tech-skills {
+        display: none;
+    }
+
+    .list--tech {
+        padding-top: 15px;
+    }
+
+
+    .personal-skills {
+        margin-top: 33px;
+        width: 300px;
+        height: 310px;
+        top: 0;
+        right: 0;
+    }
+
+
+    .list--skills {
+        max-height: 250px;
+    }
+
+
+    .educat-and-hobby {
+        padding-top: 80px;
+        padding-bottom: 0;
+    }
+
+    .educat .title__wrapper::after {
+        width: 178px;
+        height: 54px;
+        left: 15px;
+     }
+
+     .list--educat {
+        padding-top: 20px;
+      }
+
+
+      .list--hobby {
+        padding-top: 20px;
+      }
+
+
+    .expirience {
+        width: 270px;
+        height: 300px;
+        left: 0;
+    }
+
+    .expirience img {
+        top: -20px;
+        left: -10px;
+    }
+
+    .title--expirience {
+        padding-left: 100px;
+        text-align: unset;
+        color: #e9cb99;
+    }
+
+
+}
+
+
+@media (max-width: 660px) {
+
+    .personal-skills {
+        position: static;
+        margin-left: auto;
+    }
+
+    .educat-and-hobby {
+        padding-top: 40px;
+        flex-wrap: wrap;
+    }
+
+    .hobby {
+        padding-top: 25px;
+        margin-left: auto;
+    }
+
+    .expirience-and-contact {
+        flex-wrap: wrap;
+    }
+
+    .contact {
+        margin-left: auto;
+    }
+
+}
+
+@media (max-width: 570px) {
+
+    .intro__img {
+        flex-shrink: 0;
+    }
+
+    .intro__content {
+        flex-shrink: 3;
+        overflow: hidden;
+    }
+
+    .intro__img::after {
+        display: none;
+    }
+
+    .intro__title {
+        font-size: 18px;
+    }
+
+    .intro__subtitle {
+        font-size: 13px;
+    }
+
+    .intro__text {
+        max-width: 280px;
+        font-size: 13px;
+    }
+
+}
+
+
+@media (max-width: 510px) {
+
+    .intro__text {
+        padding-top: 8px;
+        max-width: 200px;
+        max-height: 200px;
+    }
+
+    .intro__img {
+        width: 30%;
+    }
+
+
+    .header__title {
+        font-size: 30px;
+    }
+
+
+    .header__subtitle {
+        font-size: 25px;
+    }
+
+    .header__text {
+        padding-top: 35px;
+        font-size: 25px;
+    }
+
+
+}
+
+
+@media (max-width: 460px) {
+
+    .header__title {
+        padding-top: 30px;
+    }
+
+    .header__subtitle {
+        padding-top: 60px;
+    }
+
+    .header__text {
+        padding-top: 5px;
+    }
+
+
+}
+
+
+@media (max-width: 425px) {
+
+    .header__title {
+        padding-top: 25px;
+    }
+
+    .header__subtitle {
+        padding-top: 30px;
+    }
+
+}
+
+
+@media (max-width: 360px) {
+
+    .personal-skills {
+        width: 260px;
+    }
+
+    .title__wrapper h2 {
+        font-size: 20px;
+    }
+
+    .title__wrapper h3 {
+        font-size: 16px;
+    }
+
+    .educat .title__wrapper::after {
+        width: 138px;
+        height: 54px;
+        left: 15px;
+    }
+
+    .expirience {
+        min-width: 260px;
+    }
+
+
+    .list--educat {
+        padding-left: 20px;
+    }
+
+    .list--hobby {
+        padding-left: 20px;
+    }
+
+    .list--contact {
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
+
+}
+
+
+@media (max-width: 350px) {
+
+    .header__title {
+        padding-top: 15px;
+    }
+
+    .header__subtitle {
+        padding-top: 10px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
